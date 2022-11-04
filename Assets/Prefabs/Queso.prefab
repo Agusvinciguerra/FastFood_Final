@@ -439,10 +439,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d54077adfd37fc74fbbd17c1ba0bf5c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadActual: 0
+  velocidadActual: 20
   velocidadImpulso: 40
   velocidadMax: 80
-  rb: {fileID: 0}
+  rb: {fileID: 5700313731249258913}
   canvasVictory: {fileID: 0}
   botonPausa: {fileID: 0}
 --- !u!114 &5700313731249258915
@@ -457,9 +457,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcb09ad57b6fb08489f63d1cc24d1b83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadActual: 0
-  velocidadImpulso: 5
-  velocidadMax: 1
+  margin: 200
+  speed: 20
 --- !u!1 &5866800268183880001
 GameObject:
   m_ObjectHideFlags: 0

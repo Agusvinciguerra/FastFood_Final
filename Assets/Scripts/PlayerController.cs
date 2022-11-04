@@ -12,7 +12,7 @@ using Debug = UnityEngine.Debug;
 public class PlayerController : MonoBehaviour
 {
     private Touch touch;
-    [SerializeField] private float velocidadActual = 0;
+    [SerializeField] private float velocidadActual = 5f;
     [SerializeField] private float velocidadImpulso = 0.03f;
     [SerializeField] private float velocidadMax = 1f;
     private Animator anim;
@@ -31,9 +31,10 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        rb.AddForce(transform.forward * velocidadActual, ForceMode.Force);
         if(Input.touchCount > 0)
         {
-            rb.AddForce(transform.forward * velocidadActual, ForceMode.Force);
+            
             touch = Input.GetTouch(0);
             float screenHalf = Screen.width / 2;
             Vector3 movement = Vector2.zero;
@@ -52,7 +53,7 @@ public class PlayerController : MonoBehaviour
 
             if(touch.phase == TouchPhase.Ended)
             {
-                velocidadActual = 0;
+                velocidadActual = 5f;
                 anim.SetFloat("Walk", velocidadActual);
             } 
         }
