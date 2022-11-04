@@ -842,16 +842,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1838611982}
+        m_TargetAssemblyTypeName: GameOverScript, Assembly-CSharp
+        m_MethodName: CargarEscena
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Nivel1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!222 &1745107109
@@ -931,3 +931,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 475d3fb0f5de3684ebf07164ee7dce8f, type: 3}
+--- !u!114 &1838611982 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3716780966587481736, guid: 475d3fb0f5de3684ebf07164ee7dce8f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1838611981}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b162cc20d21c03145b9883d6a2e720f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
